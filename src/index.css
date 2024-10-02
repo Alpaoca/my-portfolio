@@ -31,6 +31,16 @@
     --chart-5: 27 87% 67%;
   }
 
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
