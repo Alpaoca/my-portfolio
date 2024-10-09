@@ -24,7 +24,7 @@ function Nav() {
     <a
       key={index}
       href={item.href}
-      className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-all ease-linear ${
+      className={`block px-4 py-2 text-sm text-[#0A093B] hover:bg-gray-100 transition-all ease-linear ${
         showMenu ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
       }`}
       style={{
@@ -39,10 +39,10 @@ function Nav() {
 
   return (
     <>
-      <nav className="absolute left-[1.5rem] top-[1.5rem]">
+      <nav className="fixed left-[1.5rem] top-[1.5rem]">
         <button
           onClick={toggleState}
-          className="rounded-full p-[0.75rem] transition-all duration-300 ease-in-out transform hover:scale-[1.25]"
+          className="cursor-pointer rounded-full p-[0.75rem] transition-all duration-300 ease-in-out transform hover:scale-[1.25]"
         >
           <img
             src="images\burger-menu-svgrepo-com.svg"
@@ -51,7 +51,7 @@ function Nav() {
           />
         </button>
         <div
-          className={`mt-[1rem] w-[12rem] bg-[#1a1a1a] rounded-md shadow-sm transition-background duration-[1s] ease-in-out ${
+          className={`mt-[1rem] w-[12rem] bg-[#565595] rounded-md shadow-sm transition-background duration-[1s] ease-in-out ${
             toggle ? "max-h-[12rem] opacity-100" : "max-h-0 opacity-0"
           }`}
         >

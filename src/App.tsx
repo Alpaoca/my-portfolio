@@ -5,9 +5,11 @@ import About from "./components/layout/About";
 function App() {
   return (
     <>
+      <div className="w-full h-screen">
+        <Profile />
+        <About />
+      </div>
       <Nav />
-      <Profile />
-      <About />
     </>
   );
 }
