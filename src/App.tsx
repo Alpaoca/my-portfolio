@@ -5,9 +5,9 @@ import About from "./components/layout/About";
 function App() {
   return (
     <>
-      <div className="w-full h-screen">
-        <Profile />
+      <div className="h-screen overflow-y-scroll snap-mandatory snap-y">
         <About />
+        <Profile />
       </div>
       <Nav />
     </>
