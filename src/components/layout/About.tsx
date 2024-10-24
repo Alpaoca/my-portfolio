@@ -10,7 +10,7 @@ function About() {
       <Confetti />
       <div className="w-full top-0 flex items-center justify-center flex-col gap-[20px]">
         <BlurFade delay={0.25} inView>
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none ">
             Hi I'm Preecha 🍆
           </h1>
         </BlurFade>
