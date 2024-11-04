@@ -4,7 +4,7 @@ import BoxReveal from "../ui/box-reveal";
 function Profile() {
   return (
     <>
-      <div className="w-full h-screen flex justify-center items-center bg-[#1C1A5A] text-[#1C1A5A] snap-start">
+      <div className="w-full h-screen flex justify-center items-center bg-[#1C1A5A] text-[#1C1A5A]">
         <div className="rounded-xl w-8/12 h-5/6 flex justify-center items-center">
           <div className="">
             <div className="flex flex-row gap-[2rem]">
