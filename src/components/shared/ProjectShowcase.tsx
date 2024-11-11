@@ -1,7 +1,8 @@
 import BlurFade from "../ui/blur-fade";
+import BoxComponent from "./BoxComponent";
 import Button from "./Button";
 
-function ProjectShowCase({ src, h1, p }) {
+function ProjectShowCase({ src, h1, p, mapitem }) {
   return (
     <>
       <div className="bg-white rounded-xl h-10/12 w-5/6 flex p-8 gap-8">
@@ -17,23 +18,29 @@ function ProjectShowCase({ src, h1, p }) {
           <p className="font-normal font-sans text-pretty text-xl/relaxed text-muted-foreground">
             {p}
           </p>
-          <div className="flex justify-between gap-2">
-            <div className="flex flex-wrap gap-2"></div>
-            <Button
-              url="./images/globe.svg"
-              img="max-h-6 left-3"
-              style="bg-[#151515] w-full pl-[2rem]"
-              text="Website"
-            />
-            <Button
-              url="./images/github.svg"
-              img="max-h-8 left-2"
-              style="bg-[#151515] w-full pl-[2rem]"
-              text="Source"
-            />
-          </div>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-wrap gap-2">
+              {}
+              <BoxComponent text="React" />
+              <BoxComponent text="Typescript" />
+              <BoxComponent text="TailwindCSS" />
+            </div>
 
-          {/* 454545 */}
+            <div className="flex justify-between gap-2">
+              <Button
+                url="./images/globe.svg"
+                img="max-h-6 left-3"
+                style="bg-[#151515] w-full pl-[2rem] hover:bg-[#454545] transition duration-150"
+                text="Website"
+              />
+              <Button
+                url="./images/github.svg"
+                img="max-h-8 left-2"
+                style="bg-[#151515] w-full pl-[2rem] hover:bg-[#454545] transition duration-150"
+                text="Source"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
