@@ -1,14 +1,8 @@
 import ProjectShowCase from "../shared/ProjectShowcase";
-import { VelocityScroll } from "../ui/scroll-based-velocity";
 
 function Project1() {
   return (
     <>
-      <VelocityScroll
-        text={`Work In Projects            `}
-        default_velocity={5}
-        className="font-display text-center text-4xl font-extrabold whitespace-pre tracking-tight text-white bg-[#363377] md:text-5xl md:leading-[6rem]"
-      />
       <div className="w-full h-screen flex justify-center items-end bg-[#1C1A5A] text-[#1C1A5A]">
         <div className="rounded-t-xl w-10/12 h-5/6 bg-[#817FB2]">
           <div className="text-white font-extrabold flex justify-center items-center gap-8 flex-col">
@@ -18,7 +12,16 @@ function Project1() {
             <ProjectShowCase
               src="./images/ecommerce-project.png"
               h1="Ecommerce Project"
-              p="Lorem"
+              p="This project is a challenge from Frontend Mentor to build a beautiful product page by using JS skills to create a lightbox product gallery and cart functionality!"
+              stackIcons={[
+                "React",
+                "TailwindCSS",
+                "Typescript",
+                "Vite",
+                "Redux",
+              ]}
+              websiteUrl="https://alpaoca.github.io/e-commerce-product-page/"
+              githubUrl="https://github.com/Alpaoca/e-commerce-product-page"
             />
           </div>
         </div>
