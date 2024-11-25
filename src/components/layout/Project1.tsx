@@ -22,6 +22,7 @@ function Project1() {
               ]}
               websiteUrl="https://alpaoca.github.io/e-commerce-product-page/"
               githubUrl="https://github.com/Alpaoca/e-commerce-product-page"
+              alt="Ecommerce project picture"
             />
           </div>
         </div>

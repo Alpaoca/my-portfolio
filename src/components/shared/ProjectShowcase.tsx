@@ -10,6 +10,7 @@ function ProjectShowCase({
   stackIcons,
   websiteUrl,
   githubUrl,
+  alt,
 }: any) {
   const navigate = useLinkNavigation();
 
@@ -20,6 +21,7 @@ function ProjectShowCase({
           <img
             src={src}
             className="rounded-xl drop-shadow-[5px_5px_20px_rgba(0,0,0,0.05)]"
+            alt={alt}
           />
         </BlurFade>
 

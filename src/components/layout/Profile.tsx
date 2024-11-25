@@ -2,11 +2,14 @@ import toast from "react-hot-toast";
 import Button from "../shared/Button";
 import BoxReveal from "../ui/box-reveal";
 import InfoItems from "../shared/InfoItems";
+import useLinkNavigation from "../hook/useLinkNavigation";
 
 function Profile() {
+  const navigate = useLinkNavigation();
+
   function copyToClipboard(content: string) {
     navigator.clipboard.writeText(content);
-    toast("Link copied");
+    toast("Text copied");
   }
 
   return (
@@ -17,6 +20,7 @@ function Profile() {
             <img
               src="images\364621182_618854306980280_6133984518278106161_n (1).png"
               className="rounded-xl object-cover block max-h-[70%] max-w-[30%] shadow-[0px_0px_20px_5px_rgba(0,0,0,0.3)]"
+              alt="Profile picture"
             />
             <div className="bg-[#817FB2] w-full rounded-xl shadow-[0px_0px_20px_5px_rgba(0,0,0,0.3)] flex flex-row">
               <div className="max-w-[60%] p-[2rem] flex flex-col gap-2">
@@ -80,18 +84,29 @@ function Profile() {
                     style="bg-[#4843FF] hover:bg-[#6C69FF] transition duration-150"
                     img="max-h-6 bg-white left-4 p-1"
                     text="Resume"
+                    onclick={() =>
+                      navigate(
+                        "https://docs.google.com/document/d/187wAu9oBWNUAg-8n58rDE6rfaLQEwkim8Yhu9eYFOWk/edit?usp=sharing"
+                      )
+                    }
                   />
                   <Button
                     url="./images/github.svg"
                     img="max-h-8 left-3"
                     style="bg-black hover:bg-[#181818] transition duration-150"
                     text="Github"
+                    onclick={() => navigate("https://github.com/Alpaoca")}
                   />
                   <Button
                     url="./images/linkedin.svg"
                     img="max-h-6 left-4"
                     style="bg-[#1785FF] hover:bg-[#439cff] transition duration-150"
                     text="Linkedin"
+                    onclick={() =>
+                      navigate(
+                        "https://www.linkedin.com/in/preecha-kanchanakungwalkul-2410601b4/"
+                      )
+                    }
                   />
                 </div>
               </div>

@@ -14,6 +14,7 @@ function Project2() {
               stackIcons={["HTML", "CSS", "JS", "SASS/SCSS"]}
               websiteUrl="https://alpaoca.github.io/time-tracking-dashboard-main/"
               githubUrl="https://github.com/Alpaoca/time-tracking-dashboard-main"
+              alt="Time tracking dashboard project picture"
             />
           </div>
         </div>
