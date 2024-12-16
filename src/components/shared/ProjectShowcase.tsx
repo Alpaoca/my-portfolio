@@ -16,7 +16,7 @@ function ProjectShowCase({
 
   return (
     <>
-      <div className="bg-white rounded-xl h-10/12 w-5/6 flex p-8 gap-8">
+      <div className="bg-white rounded-xl h-10/12 w-5/6 p-8 gap-8 xl:flex">
         <BlurFade className="object-scale-down w-4/6" duration={0.8} inView>
           <img
             src={src}
@@ -26,7 +26,7 @@ function ProjectShowCase({
         </BlurFade>
 
         <div className="text-black flex flex-col justify-between w-2/6">
-          <h1 className="text-3xl font-bold tracking-tight">{h1}</h1>
+          <h1 className="text-xl font-bold tracking-tight xl:text-3xl">{h1}</h1>
           <p className="font-normal font-sans text-pretty text-xl/relaxed text-muted-foreground">
             {p}
           </p>

@@ -1,12 +1,21 @@
 import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 
 const useLinkNavigation = () => {
-  const navigate = useCallback((url) => {
-    const processedUrl = url.startsWith("http") ? url : `https://${url}`;
-    window.open(processedUrl, "_blank");
-  }, []);
+  const navigate = useNavigate();
 
-  return navigate;
+  const handleNavigation = useCallback(
+    (url) => {
+      if (url.startsWith("http")) {
+        window.location.href = url;
+      } else {
+        navigate(url);
+      }
+    },
+    [navigate]
+  );
+
+  return handleNavigation;
 };
 
 export default useLinkNavigation;

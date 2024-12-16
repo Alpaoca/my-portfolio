@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 
 function Nav() {
   const [toggle, setToggle] = useState(false);
@@ -15,15 +16,16 @@ function Nav() {
   };
 
   const menuItems = [
-    { href: "#", text: "Resume" },
-    { href: "#", text: "Skill" },
-    { href: "#", text: "Contact" },
+    { href: "#home", text: "Home" },
+    { href: "#profile", text: "About" },
+    { href: "#project", text: "Project" },
   ];
 
   const Menu = menuItems.map((item, index) => (
-    <a
+    <HashLink
+      smooth
+      to={item.href}
       key={index}
-      href={item.href}
       className={`block px-4 py-2 text-sm text-[#0A093B] hover:bg-gray-100 transition-all ease-linear ${
         showMenu ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
       }`}
@@ -32,9 +34,10 @@ function Nav() {
         transitionDuration: "300ms",
         transitionDelay: `${index * 300}ms`,
       }}
+      onClick={toggleState} // Close menu after selecting an item
     >
       {item.text}
-    </a>
+    </HashLink>
   ));
 
   return (
