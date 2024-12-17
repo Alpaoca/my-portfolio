@@ -17,7 +17,10 @@ function App() {
           <div id="home">
             <Home />
           </div>
-          <div className="snap-start snap-mandatory snap-always" id="profile">
+          <div
+            className="snap-start snap-mandatory snap-always flex flex-col"
+            id="profile"
+          >
             <Profile />
             <div id="project">
               <Project1 />

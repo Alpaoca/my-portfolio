@@ -5,7 +5,7 @@ function Project2() {
   return (
     <>
       <div className="w-full flex justify-center bg-[#1C1A5A] text-[#1C1A5A]">
-        <div className="w-11/12 pb-[5rem] bg-[#817FB2] xl:w-10/12">
+        <div className="w-11/12 bg-[#817FB2] xl:w-10/12">
           <div className="text-white font-extrabold flex justify-center items-center gap-8 flex-col">
             <ProjectShowCase
               src="./images/time-tracking-dashboard.png"
