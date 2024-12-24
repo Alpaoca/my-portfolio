@@ -28,14 +28,14 @@ function Profile() {
                   <p className="text-2xl font-bold xl:text-4xl">About</p>
                 </BoxReveal>
                 <BoxReveal boxColor="#575594" duration={0.5}>
-                  <p className="text-xs xl:text-lg">
+                  <p className="text-sm md:text-base xl:text-lg">
                     Civil Aviation Training Center graduate specialized experise
                     in aviation cargo management with 1 year experience in-plant
                     logistic warehouse operations.
                   </p>
                 </BoxReveal>
                 <BoxReveal boxColor="#575594" duration={0.5}>
-                  <p className="text-xs xl:text-lg">
+                  <p className="text-sm md:text-base xl:text-lg">
                     Currently focusing on transitioning into software
                     development
                   </p>
@@ -48,7 +48,7 @@ function Profile() {
                     src="./images/phone-call.svg"
                     onClick={() => copyToClipboard("+6691-185-8818")}
                   >
-                    <p className="transition text-xs xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300">
+                    <p className="transition text-sm md:text-base xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300">
                       +6691-185-8818
                     </p>
                   </InfoItems>
@@ -59,7 +59,7 @@ function Profile() {
                   >
                     <a
                       href="mailto: preechak10123@gmail.com"
-                      className="transition text-xs xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300"
+                      className="transition text-sm md:text-base xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300"
                     >
                       preechak10123@gmail.com
                     </a>
@@ -69,7 +69,7 @@ function Profile() {
                     src="./images/marker.svg"
                     onClick={() => copyToClipboard("Samut Prakan, Bangkok")}
                   >
-                    <p className="transition text-xs xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300">
+                    <p className="transition text-sm md:text-base xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300">
                       Samut Prakan, Bangkok
                     </p>
                   </InfoItems>

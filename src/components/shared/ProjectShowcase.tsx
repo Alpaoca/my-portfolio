@@ -18,9 +18,13 @@ function ProjectShowCase({
   return (
     <>
       <div
-        className={`bg-white h-10/12 w-5/6 p-8 gap-8 xl:flex ${containerStyle}`}
+        className={`bg-white h-10/12 w-5/6 p-4 gap-8 xl:flex xl:p-8 ${containerStyle}`}
       >
-        <BlurFade className="object-scale-down w-4/6" duration={0.8} inView>
+        <BlurFade
+          className="object-scale-down w-full xl:w-4/6"
+          duration={0.8}
+          inView
+        >
           <img
             src={src}
             className="rounded-xl drop-shadow-[5px_5px_20px_rgba(0,0,0,0.05)]"
@@ -28,12 +32,16 @@ function ProjectShowCase({
           />
         </BlurFade>
 
-        <div className="text-black flex flex-col justify-between w-2/6">
-          <h1 className="text-xl font-bold tracking-tight xl:text-3xl">{h1}</h1>
-          <p className="font-normal font-sans text-pretty text-xl/relaxed text-muted-foreground">
-            {p}
-          </p>
-          <div className="flex flex-col gap-4">
+        <div className="text-black flex flex-col justify-between pt-2 gap-4 md:p-4 md:w-full md:gap-4 xl:w-2/6 xl:p-0">
+          <div className="flex flex-col gap-1">
+            <h1 className="text-xl font-bold tracking-tight xl:text-3xl">
+              {h1}
+            </h1>
+            <p className="font-normal font-sans text-pretty text-sm md:text-base xl:text-lg text-muted-foreground">
+              {p}
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 xl:gap-4">
             <div className="flex flex-wrap gap-2">
               {stackIcons.map((tech) => (
                 <BoxComponent text={tech} />
