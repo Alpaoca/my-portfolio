@@ -42,7 +42,7 @@ function Nav() {
 
   return (
     <>
-      <nav className="fixed left-[1.5rem] top-[1.5rem]">
+      <nav className="fixed left-[1.5rem] top-[1.5rem] collapse md:hidden z-40">
         <button
           onClick={toggleState}
           className="cursor-pointer rounded-full p-[0.75rem] transition-all duration-300 ease-in-out transform hover:scale-[1.25]"
