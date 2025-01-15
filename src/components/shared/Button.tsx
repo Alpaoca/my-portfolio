@@ -1,4 +1,4 @@
-function Button({ text, buttonStyle, url, imgStyle, onclick, textStyle }) {
+function Button({ text, buttonStyle, url, imgStyle, onclick, textStyle }: any) {
   return (
     <button
       className={`relative cursor-pointer rounded-lg p-2 min-h-[1rem] ${buttonStyle} flex items-center justify-center w-full xl:p-[10px] xl:min-h-[3rem] xl:rounded-xl`}

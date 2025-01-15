@@ -43,8 +43,8 @@ function ProjectShowCase({
           </div>
           <div className="flex flex-col gap-2 xl:gap-4">
             <div className="flex flex-wrap gap-2">
-              {stackIcons.map((tech) => (
-                <BoxComponent text={tech} />
+              {stackIcons.map((tech: any, index: number) => (
+                <BoxComponent key={tech + index} text={tech} />
               ))}
             </div>
 

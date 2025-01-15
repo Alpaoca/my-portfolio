@@ -5,7 +5,7 @@ const useLinkNavigation = () => {
   const navigate = useNavigate();
 
   const handleNavigation = useCallback(
-    (url) => {
+    (url: string) => {
       if (url.startsWith("http")) {
         window.location.href = url;
       } else {
