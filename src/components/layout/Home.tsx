@@ -1,5 +1,5 @@
 import BlurFade from "../ui/blur-fade";
-import Confetti from "../ui/confetti";
+import Confetti, { ConfettiButton } from "../ui/confetti";
 
 function Home() {
   return (
@@ -8,11 +8,13 @@ function Home() {
       className="h-screen flex items-center justify-center bg-[#363377] text-white gap-[50px] snap-start"
     >
       <Confetti />
-      <div className="w-full top-0 flex items-center justify-center flex-col gap-[20px] ">
+      <div className="size-full top-0 flex items-center justify-center flex-col gap-[20px] z-40">
         <BlurFade delay={0.25} inView>
           <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none ">
             Hi I'm Preecha{" "}
-            <button className="p-0 rounded-full bg-transparent">👏</button>
+            <ConfettiButton className=" rounded-full bg-transparent p-0 hover:bg-transparent">
+              🎉
+            </ConfettiButton>
           </h1>
         </BlurFade>
         <BlurFade delay={0.25 * 2} inView>

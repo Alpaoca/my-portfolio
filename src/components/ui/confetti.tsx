@@ -50,6 +50,13 @@ const ConfettiComponent = forwardRef<ConfettiRef, Props>((props, ref) => {
           ...globalOptions,
           resize: true,
         });
+        // Set canvas style to make it non-blocking
+        node.style.position = "fixed";
+        node.style.top = "0";
+        node.style.left = "0";
+        node.style.width = "100%";
+        node.style.height = "100%";
+        node.style.pointerEvents = "none";
       } else {
         if (instanceRef.current) {
           instanceRef.current.reset();

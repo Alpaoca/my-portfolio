@@ -77,7 +77,7 @@ function Profile() {
                 <div className="flex flex-col gap-1.5">
                   <div className="flex flex-row gap-1.5 sm:flex-col">
                     <Button
-                      url="./images/envelope-open-text.svg"
+                      url="/my-portfolio/svg/envelope-open-text.svg"
                       imgStyle="max-h-6 bg-white left-1.5 p-1 xl:left-4"
                       buttonStyle="bg-[#4843FF] hover:bg-[#6C69FF] transition duration-150"
                       text="Resume"
@@ -89,7 +89,7 @@ function Profile() {
                       }
                     />
                     <Button
-                      url="./images/github.svg"
+                      url="/my-portfolio/svg/github.svg"
                       imgStyle="max-h-8 left-0.5 p-[2px] xl:p-0 xl:left-3"
                       buttonStyle="bg-black hover:bg-[#181818] transition duration-150"
                       text="Github"
@@ -99,7 +99,7 @@ function Profile() {
                   </div>
 
                   <Button
-                    url="./images/linkedin.svg"
+                    url="/my-portfolio/svg/linkedin.svg"
                     imgStyle="max-h-6 left-1.5 xl:left-4"
                     buttonStyle="bg-[#1785FF] hover:bg-[#439cff] transition duration-150"
                     text="Linkedin"

@@ -50,18 +50,20 @@ function ProjectShowCase({
 
             <div className="flex justify-between gap-2">
               <Button
-                url="./images/globe.svg"
+                url="/my-portfolio/svg/globe.svg"
                 imgStyle="max-h-6 left-3"
                 buttonStyle="bg-[#151515] w-full pl-[2rem] hover:bg-[#454545] transition duration-150"
                 text="Website"
+                alt="globe icon"
                 textStyle=""
                 onclick={() => navigate(websiteUrl)}
               />
               <Button
-                url="./images/github.svg"
+                url="/my-portfolio/svg/github.svg"
                 imgStyle="max-h-8 left-2"
                 buttonStyle="bg-[#151515] w-full pl-[2rem] hover:bg-[#454545] transition duration-150"
                 text="Source"
+                alt="github icon"
                 textStyle=""
                 onclick={() => navigate(githubUrl)}
               />
