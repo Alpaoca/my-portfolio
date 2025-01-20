@@ -48,7 +48,7 @@ function Nav() {
           className="cursor-pointer rounded-full p-[0.75rem] transition-all duration-300 ease-in-out transform hover:scale-[1.25]"
         >
           <img
-            src="/images/burger-menu-svgrepo-com.svg"
+            src="/my-portfolio/svg/burger-menu-svgrepo-com.svg"
             className="size-[1.5rem]"
             alt="Navigation burger menu icon"
           />

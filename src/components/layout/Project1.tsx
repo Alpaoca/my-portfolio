@@ -11,7 +11,7 @@ function Project1() {
             </h1>
             <ProjectShowCase
               containerStyle="rounded-t-xl"
-              src="/images/ecommerce-project.png"
+              src="/my-portfolio/images/ecommerce-project.png"
               h1="Ecommerce Project"
               p="This project is a challenge from Frontend Mentor to build a beautiful product page by using JS skills to create a lightbox product gallery and cart functionality!"
               stackIcons={[

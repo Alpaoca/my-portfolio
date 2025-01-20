@@ -8,7 +8,7 @@ function Project2() {
         <div className="w-11/12 bg-[#817FB2] xl:w-10/12">
           <div className="text-white font-extrabold flex justify-center items-center gap-8 flex-col">
             <ProjectShowCase
-              src="/images/time-tracking-dashboard.png"
+              src="/my-portfolio/images/time-tracking-dashboard.png"
               h1="Time Tracking Dashboard"
               p="This project is also a challenge from Frontend Mentor which teach me how to use CSS Grid."
               stackIcons={["HTML", "CSS", "JS", "SASS/SCSS"]}

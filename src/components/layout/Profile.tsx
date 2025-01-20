@@ -18,7 +18,7 @@ function Profile() {
         <div className="rounded-xl  w-11/12  xl:w-8/12">
           <div className="flex flex-col gap-[2rem] xl:flex-row items-center">
             <img
-              src="/images/Tanganyika_Alpaca_2021_CS2-scaled.jpg"
+              src="/my-portfolio/images/Tanganyika_Alpaca_2021_CS2-scaled.jpg"
               className="rounded-xl block shadow-[0px_0px_20px_5px_rgba(0,0,0,0.3)] max-w-[10rem] md:max-h-[28rem] xl:max-w-[20rem]"
               alt="Profile picture"
             />
@@ -45,7 +45,7 @@ function Profile() {
                 <section className="flex flex-col gap-2 xl:gap-4 ">
                   <h2 className="text-2xl font-bold xl:text-4xl">Contact</h2>
                   <InfoItems
-                    src="/images/phone-call.svg"
+                    src="/my-portfolio/svg/phone-call.svg"
                     onClick={() => copyToClipboard("+6691-185-8818")}
                   >
                     <p className="transition text-sm md:text-base xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300">
@@ -54,7 +54,7 @@ function Profile() {
                   </InfoItems>
 
                   <InfoItems
-                    src="/images/envelope.svg"
+                    src="/my-portfolio/svg/envelope.svg"
                     onClick={() => copyToClipboard("preechak10123@gmail.com")}
                   >
                     <a
@@ -66,7 +66,7 @@ function Profile() {
                   </InfoItems>
 
                   <InfoItems
-                    src="/images/marker.svg"
+                    src="/my-portfolio/svg/marker.svg"
                     onClick={() => copyToClipboard("Samut Prakan, Bangkok")}
                   >
                     <p className="transition text-sm md:text-base xl:text-lg md:font-bold sm:font-normal hover:text-[#9E7AFF] duration-300">
