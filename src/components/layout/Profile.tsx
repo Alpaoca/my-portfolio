@@ -18,7 +18,7 @@ function Profile() {
         <div className="rounded-xl  w-11/12  xl:w-8/12">
           <div className="flex flex-col gap-[2rem] xl:flex-row items-center">
             <img
-              src="/my-portfolio/images/Tanganyika_Alpaca_2021_CS2-scaled.jpg"
+              src="/my-portfolio/images/PXL_20250129_035630482~3.jpg"
               className="rounded-xl block shadow-[0px_0px_20px_5px_rgba(0,0,0,0.3)] max-w-[10rem] md:max-h-[28rem] xl:max-w-[20rem]"
               alt="Profile picture"
             />
@@ -84,7 +84,7 @@ function Profile() {
                       textStyle="pl-5 md:pl-0 text-xs xl:text-lg"
                       onclick={() =>
                         navigate(
-                          "https://docs.google.com/document/d/187wAu9oBWNUAg-8n58rDE6rfaLQEwkim8Yhu9eYFOWk/edit?usp=sharing"
+                          "https://docs.google.com/document/d/1IafuyRIpXPV7Hcod8RnHoJUEpLBgmWk3ZwcsRnvrhqw/edit?usp=sharing"
                         )
                       }
                     />
