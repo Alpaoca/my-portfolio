@@ -11,14 +11,14 @@ function Profile() {
     navigator.clipboard.writeText(content);
     toast("Text copied");
   }
-  // images\364621182_618854306980280_6133984518278106161_n (1).png
+
   return (
     <>
       <div className="w-full h-screen flex justify-center md:items-center bg-[#1C1A5A] text-[#1C1A5A] py-8 box-content">
         <div className="rounded-xl  w-11/12  xl:w-8/12">
           <div className="flex flex-col gap-[2rem] xl:flex-row items-center">
             <img
-              src="/my-portfolio/images/PXL_20250129_035630482~3.jpg"
+              src="/my-portfolio/images/Profile Picture.jpg"
               className="rounded-xl block shadow-[0px_0px_20px_5px_rgba(0,0,0,0.3)] max-w-[10rem] md:max-h-[28rem] xl:max-w-[20rem]"
               alt="Profile picture"
             />
